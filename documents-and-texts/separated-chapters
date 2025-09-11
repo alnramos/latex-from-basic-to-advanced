@@ -1,0 +1,37 @@
+% Begin main.tex
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos, Ramos A.A.} 
+\maketitle
+
+\include{cap1}
+
+\include{cap2}
+
+\end{document}
+% End main.tex
+
+% Begin cap1.tex
+% File -> New -> Save as cap1.tex
+\chapter{Introdução}
+\label{cap1}
+
+É imperioso ressaltar que o recalque da enunciação realiza a travessia da fantasia cujos efeitos produzem o recalque desta mesma etilogia sexual da neurose.
+% End cap1.tex
+
+% Begin cap2.tex
+% File -> New -> Save as cap2.tex
+\chapter{Metodologia}
+\label{cap2}
+
+Freud, em correspondência a Jung, cita que o estado amoroso na hipnose opera não per via di porre, e sim per via di levare que delimita o campo de intervenção do analista
+% End cap2.tex
