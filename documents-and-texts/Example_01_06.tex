@@ -1,0 +1,29 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Footnote
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos \footnote{Computer Engineer}} 
+\maketitle
+
+The following item in this sentence \footnote{will be place in a footnote}
+
+\end{document}
