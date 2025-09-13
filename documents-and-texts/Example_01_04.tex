@@ -1,0 +1,52 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Word styles
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Allows to use the command \sout to cross out the text
+%\usepackage[normalem]{ulem}
+
+% Allows to use the command \noindent
+%\usepackage{indentfirst}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos, Ramos A.A.}
+\maketitle
+
+%\noindent
+\textbf{This sentence will be in bold}\newline
+\bfseries{This sentence will be in bold}\newline
+
+\textit{This sentence will be in italics}\newline
+\itshape{This sentence will be in italics}\newline
+
+\underline{This sentence is underlined}\newline
+%\sout{This sentence is crossed out}
+
+\textsf{This sentence uses the Sans-Serif style}\newline
+\sffamily{This sentence uses the Sans-Serif style}\newline
+
+\texttt{This sentence uses the Typewriter style}\newline
+\ttfamily{This sentence uses the Typewriter style}\newline
+
+\textrm{This sentence uses the Roman style}\newline
+\rmfamily{This sentence uses the Roman style}\newline
+
+\end{document}
