@@ -1,0 +1,47 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Colors
+
+% Preamble
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% The two following packages are related to text colors
+\usepackage{color}
+\usepackage [dvipsnames, svgnames]{xcolor}
+
+% To discover new colors: https://www.flextool.com.br/tabela_cores.html
+% Syntax: {label} {RGB} {Color code}
+\definecolor{laranja}{RGB}{255, 155, 0} % Set the orange color
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos} 
+\maketitle
+
+\pagecolor{blue}
+
+% Using package color
+\textcolor{laranja}{This sentence has the color orange}\\
+
+% Using packages dvipsnames and svgnames
+\color{Aqua}{This sentence has the color aqua}\\
+\color{Violet} {This sentence has the color violet}\\
+
+\colorbox{Purple}{This box has the color purple}
+\fcolorbox{yellow}{green}{The text will have a yellow background an a green border}
+
+\end{document}
