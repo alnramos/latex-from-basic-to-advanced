@@ -14,13 +14,14 @@ You can use **Overleaf**, which is an online LaTeX editor, or install the compon
 
 Você pode usar o **Overleaf**, que é um editor de LaTeX online, ou instalar os componentes diretamente no seu computador. Para a instalação local, você precisará de um sistema de compilação como o **MiKTeX** (para Windows) ou **TeX Live** (para Windows, macOS e Linux), além de um editor de texto, como o **TeXmaker**.
 
-[Overleaf](https://pt.overleaf.com/)
 
-[Miktek](https://miktex.org/)
+- [Overleaf](https://pt.overleaf.com/)
 
-[TeX Live](https://www.tug.org/texlive/)
+- [Miktek](https://miktex.org/)
 
-[Texmaker](https://www.xm1math.net/texmaker/)
+- [TeX Live](https://www.tug.org/texlive/)
+
+- [Texmaker](https://www.xm1math.net/texmaker/)
 
 
 
