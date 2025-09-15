@@ -21,7 +21,7 @@ Você pode usar o **Overleaf**, que é um editor de LaTeX online, ou instalar os
 
 - [TeX Live](https://www.tug.org/texlive/)
 
-- [Texmaker](https://www.xm1math.net/texmaker/)
+- [TeXmaker](https://www.xm1math.net/texmaker/)
 
 
 
