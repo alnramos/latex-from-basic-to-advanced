@@ -1,0 +1,86 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Basic Operations
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{center}
+\large\textbf{Ambiente Matemático}
+\end{center}
+\vspace{0.5cm}
+
+% Soma
+$ y = 4 + 5 $
+
+% Subtração
+$ y = 5 - 4 $
+
+% Multiplicação
+$ y = 4 * 5 $
+$ z = 3.5 $
+$ x = 8 \times 9 $
+
+% Divisão
+$ y = 10 / 5 $
+
+% Frações
+% Sintaxe: frac{numerador}{denominador}
+\begin{equation}
+\frac{4}{2}
+\end{equation}
+
+\begin{equation}
+\frac{( 20 + 15 + 60 )}{( 5 + 1 + 4 )}
+\end{equation}
+
+% Exponenciação
+\begin{equation}
+a^{( 3 + 2 )}
+\end{equation}
+
+\begin{equation}
+a^{\frac{5}{3}}
+\end{equation}
+
+% Radiciação
+% Sintaxe: sqrt[índice]{radicando} ou sqrt{radicando}
+\begin{equation}
+\sqrt[3]{27}
+\end{equation}
+
+\begin{equation}
+\sqrt{8}
+\end{equation}
+
+% Logaritmação
+\begin{equation}
+\log 7
+\end{equation}
+
+% Log de 100 na base 10
+% Sintaxe: log_{base} logaritmando
+\begin{equation}
+\log_{10} 100
+\end{equation}
+
+\end{document}
