@@ -1,0 +1,67 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Building Equations using Mathematical Symbols
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{center}
+\large\textbf{Ambiente Matemático}
+\end{center}
+\vspace{0.5cm}
+
+% Lei da Gravitação Universal de Newton
+\begin{equation}
+\vec{F} = -G \frac{m_1 m_2}{r^{2}} \hat{r}.
+\end{equation}
+
+% Valor da constante G
+\begin{equation}
+6,6 \times 10^{-11} \frac{m^{3}}{Kg^{-1}s^{-2}}
+\end{equation}
+
+\begin{equation}
+f(t) = \frac{1}{2} + \frac{cos \frac{\pi}{3}}{2\pi} \sum_{-\infty}^{\infty}  \frac{1}{n} e^{Bn2\pi t}
+\end{equation}
+
+\begin{equation}
+\frac{ a }{ b + \frac{b+1}{ c + \frac{c+1}{d + \frac{d+1}{e} } } }
+\end{equation}
+
+% Uso dos delimitadores para melhorar a visualização das expressões e equações
+\begin{equation}
+\left( \frac{a}{b} \right)
+\end{equation}
+
+\begin{equation}
+\left[ \frac{a}{b} \right]
+\end{equation}
+
+\begin{equation}
+\left\lbrace \frac{a}{b} \right\rbrace
+\end{equation}
+
+\begin{equation}
+\frac{d}{dt} \left( mr^{2} \frac{d\theta}{dt} \right) = 0
+\end{equation}
+
+\end{document}
