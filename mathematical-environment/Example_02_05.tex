@@ -1,0 +1,59 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Building Equations using Mathematical Symbols
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{center}
+\large\textbf{Ambiente Matemático}
+\end{center}
+\vspace{0.5cm}
+
+% O underline indica que o elemento subsequente será subscrito
+\begin{equation}
+\lim_{x \rightarrow 2} (x^{5} - 32)
+\end{equation}
+
+\begin{equation}
+\lim_{x \rightarrow 3} \sqrt{x^{3} - 27}
+\end{equation}
+
+\begin{equation}
+\lim_{x \rightarrow -3} \frac{(x^{2} - 9)}{(x + 3)} 
+\end{equation}
+
+\begin{equation}
+\lim_{x \rightarrow \infty} \frac{1}{x} 
+\end{equation}
+
+\begin{equation}
+\int (e^{-5x} + x^{-x}) dx
+\end{equation}
+
+% _{a}: limite inferior da integral
+% ^{b}: limite superior da integral
+\begin{equation}
+\int_{a}^{b} f(x) dx = F(b) + 9 - F(a) - 9
+\end{equation}
+
+\end{document}
