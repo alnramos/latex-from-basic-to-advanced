@@ -1,0 +1,79 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Matrix
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% pmatrix package
+\usepackage{amsmath, array, amssymb}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{center}
+\large\textbf{Ambiente Matemático}
+\end{center}
+\vspace{0.5cm}
+
+% Existem dois ambientes para realizar a implementação de matrizes: array e pmatrix
+
+% Ao utilizarmos o ambiente array, o posicionamento do elemento é especificado por letras 
+% As linhas são separadas por (\\) e as colunas por (&)
+
+% Matriz quadrada de ordem 2 (2x2)
+\begin{equation}
+\left(
+\begin{array}{lr}
+	a & b \\
+	c & d \\
+\end{array}
+\right)
+\end{equation}
+
+% Matriz de ordem três (3x3)
+\begin{equation}
+\left(
+\begin{array}{lcr}
+	a & b & c\\
+	d & e &  f \\
+	g & h & i \\
+\end{array}
+\right)
+\end{equation}
+
+% Ambiente pmatrix
+% É o ambiente recomendado pois ser mais flexível
+
+\begin{equation}
+\begin{pmatrix}
+	x & y & x \\
+	w & h & r \\
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{pmatrix}
+	x & y & z & i \\
+	w & h & r & h \\
+	r & t & j & g \\
+\end{pmatrix}
+\end{equation}
+
+\end{document}
