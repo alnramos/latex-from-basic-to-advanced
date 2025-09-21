@@ -1,0 +1,83 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Determinants
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% pmatrix package
+\usepackage{amsmath, array, amssymb}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{center}
+\large\textbf{Ambiente Matemático}
+\end{center}
+\vspace{0.5cm}
+
+% Primeira coluna (left)
+% Segunda coluna (center)
+% Terceira coluna (right
+\begin{equation}
+det(A) = 
+\left\vert
+\begin{array}{lcr}
+	a_{11} & b_{12} & c_{13} \\
+	d_{21} & e_{22} & f_{23} \\
+	g_{31} & h_{32} & i_{33} \\
+\end{array}
+\right\vert
+\end{equation}
+
+\begin{equation}
+det(A) = 
+\left\vert
+\begin{array}{lr}
+	a_{11} & b_{12} \\
+	c_{21} & d_{22} \\
+\end{array}
+\right\vert
+\end{equation}
+
+% Delimitadores de linha
+\begin{eqnarray}
+\overbrace{ABC}\\
+\underbrace{AB}\\
+\overline{ab}\\
+\underline{cd}\\
+\overrightarrow{ABCD}\\
+\overleftarrow{ABCD}\\
+\widehat{AB}\\
+\end{eqnarray}
+
+\begin{eqnarray}
+	\overline{(A \cdot B)}
+\end{eqnarray}
+
+\begin{eqnarray}
+\overline{ (A + B + C) \cdot \left(\frac{A}{B}\right) }
+\end{eqnarray}
+
+\begin{eqnarray}
+\vec{F} = 
+\overline{(A \cdot B \cdot C)} + \overline{(A - B - C)}
+\end{eqnarray}
+
+\end{document}
