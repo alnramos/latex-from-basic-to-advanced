@@ -1,0 +1,37 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Tables
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+% Uso dos comandos l (left), c (center) e r (right)
+% O separador | acrescenta uma linha vertical
+% \hline acrescenta uma linha horizontal
+% Separar colunas com & e separar linhas com \\
+\begin{tabular}{| l | c | r |} \hline
+	Célula 1 & Célula 2 & Célula 3 \\ \hline
+	Célula  4 & Célula 5 & Célula 6 \\ \hline
+	Célula 7 & Célula 8 & Célula 9 \\ \hline
+\end{tabular}
+
+\end{document}
