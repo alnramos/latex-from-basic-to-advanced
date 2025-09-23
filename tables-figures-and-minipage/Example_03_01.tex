@@ -34,4 +34,28 @@
 	Célula 7 & Célula 8 & Célula 9 \\ \hline
 \end{tabular}
 
+\vspace{2cm}
+
+% O multicolum tem três argumentos: número, posição e item
+% Todos os elementos abaixo estão centralizados
+% \multicolumn{Colunas a serem mescladas}{Alinhamento}{Nome do item}
+\begin{tabular}{| c | c | c | c |} \hline
+	\multicolumn{4}{| c |}{Meses do ano} \\ \hline
+	Janeiro & Fevereiro & Março & Abril \\ \hline
+	Maio & Junho & Julho & Agosto \\ \hline
+	Stembro & Outubro & Novembro & Dezembro \\ \hline
+\end{tabular}
+
+\vspace{2cm}
+
+\begin{tabular}{| c | cc |} \hline
+	Números & \multicolumn{2}{c|}{Meses do ano e abreviação} \\ \hline
+	1 & Janeiro & Jan \\ \cline{2-3}
+	2 & Fevereiro & Fev \\ \cline{2-3}
+	3 & Março & Mar \\ \cline{2-3}
+	4 & Abril & Abr \\ \cline{2-3}
+	5 & Maio & Maio \\ \cline{2-3}
+	6 & Junho & Jun \\ \hline
+\end{tabular}
+
 \end{document}
