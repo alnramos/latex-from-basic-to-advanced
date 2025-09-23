@@ -1,0 +1,44 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Figures
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Package related to figures
+\usepackage{graphicx}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+% Possíveis parâmetros entre colchetes
+% \begin{figure}[
+% h: A imagens será mantida em um local padrão definido pelo TeX
+% t: A imaagem será colocada na parte superior da página
+% b: A imagem será colocada na parte inferior da página
+% p: A imagem será colocada em uma nova página
+% ]
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{/home/allan/Pictures/LaTeX/world.png}
+\label{Globo terreste}
+\caption{Globo terreste}
+\end{figure}
+
+\end{document}
