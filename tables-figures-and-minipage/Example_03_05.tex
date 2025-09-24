@@ -1,0 +1,96 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Summary and Thanks
+
+% Preamble
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Package related to figures
+\usepackage{graphicx}
+
+\usepackage{indentfirst}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+
+% Espaçamento entre o top da página e o primeiro parágrafo
+\addtolength{\topmargin}{1.5cm}
+
+% Espaçamento entre um parágrafo e outro
+\setlength{\baselineskip}{1.4\baselineskip}
+
+\begin{center}
+\large{NOME DA UNIVERSIDADE}
+
+\large{INSTITUIÇÃO ACADÊMICA OU ESCOLA OU FACULDADE }
+\end{center}
+
+\vspace{2cm}
+
+\begin{center}
+\Large{\textbf{Título do seu trabalho}}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+% Author
+\Large{Allan de Alencar Ramos}
+\end{center}
+
+\vspace{2cm}
+
+\begin{flushright}
+\begin{minipage}{10cm}
+\hrulefill
+
+Trabalho final de graduação do curso de Matemática da Universidade Estadual de Campinas apresentado como pré-requisito para a obtenção do grau de Bacharel em Matemática.
+
+\hrulefill
+
+\textbf{Orientador: Prof. Dr. Fulano}
+
+\end{minipage}
+\end{flushright}
+
+\setlength{\baselineskip}{0.7\baselineskip}
+
+% Com o comando \vfill é adicionado certo espaçamento que não extrapole os limites da página
+\vfill
+
+\begin{center}
+São Paulo
+
+Setembro de 2025
+\end{center}
+
+\end{titlepage}
+
+% Lembre-se de que para utilizar o comando \chapter é necessário que o estilo do documento seja book
+
+% Resumo
+\chapter*{Resumo}
+\noindent
+Aqui vai o resumo do seu trabalho... \\
+\textbf{Palavras-chave: } Português, Matemática, Física, Química 
+
+% Agradecimentos
+\chapter*{Agradecimentos}
+\noindent
+Aqui vai os agradecimentos para as pessoas mais próximas deste trabalho...
+
+\end{document}
