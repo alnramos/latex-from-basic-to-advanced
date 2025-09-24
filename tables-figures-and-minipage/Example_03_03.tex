@@ -1,0 +1,57 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Minipage
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Package related to figures
+\usepackage{graphicx}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+% Criar uma caixa de texto vazia para dar um espaçamento
+\mbox{}
+
+\vspace{5cm}
+
+% Minipage é um trecho de área que ocupa uma determinada posição na página
+
+% Possíveis parãmetros entre colchetes
+% [Posição: t (superior), c (centralizado) e b (inferior)]
+
+% Possíveis parâmetros entre chaves
+% {Largura do texto na minipage (ocupa um maior espçamento na horizontal)}
+
+% Exemplo de folha de rosto personalizada
+\begin{flushright}
+\begin{minipage}{10cm}
+\hrulefill
+
+Trabalho final de graduação do curso de Matemática da Universidade Estadual de Campinas apresentado como pré-requisito para a obtenção do grau de Bacharel em Matemática.
+
+\hrulefill
+
+\textbf{Orientador: Prof. Dr. Fulano}
+
+\end{minipage}
+\end{flushright}
+
+\end{document}
