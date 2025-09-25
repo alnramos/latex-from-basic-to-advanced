@@ -1,0 +1,38 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Subfigures
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{figure}
+\centering
+\subcaptionbox{Brazil\label{Brazil}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/brazil.png}}
+\subcaptionbox{Argentina\label{Argentina}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/argentina.png}}
+\subcaptionbox{Brazil\label{Colombia}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/colombia.png}}
+\caption{Alguns países da América do Sul}\label{FigSouthAmerica}
+\end{figure}
+
+\end{document}
