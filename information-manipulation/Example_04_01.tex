@@ -1,0 +1,33 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Referencing Mathematical Equations
+
+% Preamble
+\documentclass[12pt, a4paper]{article}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+\begin{equation} \label{SegundaLeiDeNewton}
+f = m \cdot a
+\end{equation}
+
+A equação \ref{SegundaLeiDeNewton} é a Segunda Lei de Newton, ou Princípio Fundamental da Dinâmica.
+
+\end{document}
