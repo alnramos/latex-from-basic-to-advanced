@@ -1,0 +1,84 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Summary of Figures and Tables
+
+% Preamble
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+% Summary
+\tableofcontents
+
+% Sumary of Figures
+\listoffigures
+
+% Summary of Tables
+\listoftables
+
+\newpage
+
+\chapter{Introdução}
+
+\section{Assunto 1}
+
+\begin{table}[h]\label{TabMaioresPaisesEmExtensao}
+\centering
+\caption{Os maiores países do mundo em extensão}
+\vspace{0.5cm}
+\begin{tabular}{ c | cc |}
+	Posição & Países & Extensão territorial ($km^{2}$) \\ \hline
+	1 & Rússia 			& 17.098.246 \\
+	2 & Canadá 			& 9.984.670 \\
+	3 & China 			& 9.596.961 \\
+	4 & Estados Unidos 	& 9.371.174 \\
+	5 & Brasil 			& 8.515.767 \\
+
+\end{tabular}
+
+\end{table}
+
+\section{Assunto 2}
+
+\chapter{Material e Métodos}
+
+\section{Assunto 3}
+
+\begin{figure}[h]
+\centering
+\subcaptionbox{Brazil\label{Brazil}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/brazil.png}}
+\subcaptionbox{Argentina\label{Argentina}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/argentina.png}}
+\subcaptionbox{Brazil\label{Colombia}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/colombia.png}}
+\caption{Alguns países da América do Sul}\label{FigSouthAmerica}
+
+\end{figure}
+
+\vspace{1cm}
+
+A Figura \ref{Brazil} representa a bandeira do Brasil, enquanto que as Figuras \ref{Argentina} e \ref{Colombia} representam as bandeiras da Argentina e Colombia respectivamente. Desta forma, a Figura \ref{FigSouthAmerica} representam três países da América do Sul.
+
+\section{Assunto 4}
+
+\chapter{Conclusão}
+
+\end{document}
