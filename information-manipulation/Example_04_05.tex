@@ -1,0 +1,36 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Bibliographic References
+
+% Preamble
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+% \usepackage{nottoc, tocbibind}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+Desde ontem a noite o módulo de recursão paralela corrigiu o bug na estabilidade do protocolo de transferência de dados \cite{Allan}.
+
+% Máximo de referêencias a serem citadas
+\begin{thebibliography}{1}
+\bibitem{Allan} Ramos, A.A; Curso de LaTeX. Universidade Estadual de Campinas, 2025.
+\end{thebibliography}
+
+\end{document}
