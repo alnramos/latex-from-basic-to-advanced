@@ -1,0 +1,69 @@
+% LaTeX
+% Allan de Alencar Ramos
+% Bibliographic References
+
+% Preamble
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Packages related to language and characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set the language of the document to Brazilian Portuguese
+\usepackage[brazilian]{babel}
+
+% Package related to paper margins
+\usepackage[top = 2cm, bottom = 2cm, left = 2.5cm, right = 2.5cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{ftnxtra}
+\usepackage{fnpos}
+\usepackage{lipsum}
+
+% Line spacing
+\linespread{1.5}
+
+\begin{document}
+
+\title{LaTeX}
+\author{Allan de Alencar Ramos}
+\maketitle
+
+Desde ontem a noite o módulo de recursão paralela corrigiu o bug na estabilidade do protocolo de transferência de dados \cite{Allan}.
+
+\begin{figure}[h]
+\centering
+\subcaptionbox{Brazil\label{Brazil}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/brazil.png}}
+\subcaptionbox{Argentina\label{Argentina}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/argentina.png}}
+\subcaptionbox{Brazil\label{Colombia}}{\includegraphics[scale=0.5]{/home/allan/Pictures/LaTeX/colombia.png}}
+\caption{Alguns países da América do Sul \cite{Allan}\footnote{Imagem retirada do site Free Icons}}\label{FigSouthAmerica}
+
+\end{figure}
+
+\begin{table}[h]\label{TabMaioresPaisesEmExtensao}
+\centering
+\caption{Os maiores países do mundo em extensão \cite{IBGE}\footnote{Retirado do site do IBGE}}
+\vspace{0.5cm}
+\begin{tabular}{ c | cc |}
+	Posição & Países & Extensão territorial ($km^{2}$) \\ \hline
+	1 & Rússia 			& 17.098.246 \\
+	2 & Canadá 			& 9.984.670 \\
+	3 & China 			& 9.596.961 \\
+	4 & Estados Unidos 	& 9.371.174 \\
+	5 & Brasil 			& 8.515.767 \\
+
+\end{tabular}
+
+\end{table}
+\footnotetext{Retirado do site do IBGE}
+
+% Máximo de referêencias a serem citadas
+\begin{thebibliography}{2}
+\bibitem{Allan} Ramos, A.A; Curso de LaTeX. Universidade Estadual de Campinas, 2025.
+
+\bibitem{IBGE} IBGE, Instituto Brasileiro de Geografia e Estatísticas, 2021.
+\end{thebibliography}
+
+\end{document}
